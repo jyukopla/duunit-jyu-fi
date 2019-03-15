@@ -1,0 +1,64 @@
+{
+  "name": "duunit-jyu-fi",
+  "description": "https://duunit.jyu.fi/",
+  "version": "1.0.0",
+  "author": "Asko Soukka <asko.soukka@iki.fi>",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      [
+        "@babel/preset-react",
+        {
+          "useBuiltIns": true,
+          "pragma": "React.createElement"
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-syntax-dynamic-import",
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "helpers": true,
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "main": "n/a",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "dotenv": "^7.0.0",
+    "eslint-config-react-app": "^3.0.8",
+    "gatsby": "^2.1.33",
+    "gatsby-image": "^2.0.33",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-react-helmet": "^3.0.9",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.28",
+    "gatsby-source-filesystem": "^2.0.25",
+    "gatsby-source-plone": "git+https://github.com/collective/gatsby-source-plone.git#ba48b17c29db37d7508ab55d5640b50523b5a738",
+    "gatsby-transformer-sharp": "^2.1.17",
+    "node-sass": "^4.11.0",
+    "object-fit-images": "^3.2.4",
+    "prettier": "^1.16.4",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.5.0",
+    "react-serialize": "^0.2.0"
+  }
+}

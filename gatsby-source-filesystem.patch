@@ -1,0 +1,41 @@
+diff -Nru a/node_modules/gatsby-source-plone/node_modules/gatsby-source-filesystem/create-remote-file-node.js b/node_modules/gatsby-source-plone/node_modules/gatsby-source-filesystem/create-remote-file-node.js
+--- a/node_modules/gatsby-source-plone/node_modules/gatsby-source-filesystem/create-remote-file-node.js	2019-03-14 23:42:33.881874388 +0200
++++ b/node_modules/gatsby-source-plone/node_modules/gatsby-source-filesystem/create-remote-file-node.js	2019-03-15 00:03:01.741587647 +0200
+@@ -215,6 +215,7 @@
+     createNode,
+     parentNodeId,
+     auth = {},
++    headers = {},
+     createNodeId,
+     ext,
+     name
+@@ -225,7 +226,6 @@
+     // from a previous request.
+ 
+     const cachedHeaders = yield cache.get(cacheId(url));
+-    const headers = {};
+ 
+     if (cachedHeaders && cachedHeaders.etag) {
+       headers[`If-None-Match`] = cachedHeaders.etag;
+@@ -340,6 +340,7 @@
+   createNode,
+   parentNodeId = null,
+   auth = {},
++  headers = {},
+   createNodeId,
+   ext = null,
+   name = null
+@@ -385,10 +386,11 @@
+     parentNodeId,
+     createNodeId,
+     auth,
++    headers,
+     ext,
+     name
+   });
+   fileDownloadPromise.then(() => bar.tick());
+   processingCache[url] = fileDownloadPromise;
+   return fileDownloadPromise;
+-};
+\ Ei rivinvaihtoa tiedoston lopussa
++};

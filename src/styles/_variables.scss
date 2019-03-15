@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/functions";
+
+$red: #f1563f;
+$blue: #002957;
+$gold: #caa260;
+$gray: #e9e9e9;
+
+$theme-colors: (
+  "red": $red,
+  "blue": $blue,
+  "gold": $gold,
+  "gray": $gray,
+);
+
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/navbar";
+

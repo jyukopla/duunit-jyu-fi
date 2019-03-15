@@ -1,0 +1,7 @@
+.cache/
+.idea/
+.DS_Store
+.secrets
+node_modules
+public/
+yarn-error.log
