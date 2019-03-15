@@ -28,7 +28,8 @@
     ]
   },
   "resolutions": {
-    "babel-core": "7.0.0-bridge.0"
+    "babel-core": "7.0.0-bridge.0",
+    "react-dev-utils": "^4.2.2"
   },
   "main": "n/a",
   "devDependencies": {
