@@ -2,14 +2,13 @@ import Helmet from 'react-helmet';
 import React from 'react';
 
 import { graphql } from 'gatsby';
+import { deserialize } from 'react-serialize';
 import Img from 'gatsby-image';
 
 import '../styles/index.scss';
-import { deserialize } from 'react-serialize';
-// import { deserialize } from 'react-serialize';
 
 const Header = ({ logo }) => (
-  <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white text-blue border-bottom box-shadow">
+  <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
     <h5 className="my-0 mr-md-auto font-weight-normal d-flex flex-row align-items-center">
       <Img fixed={logo} />
     </h5>
@@ -171,6 +170,5 @@ export const query = graphql`
         }
       }
     }
-    _path
   }
 `;
