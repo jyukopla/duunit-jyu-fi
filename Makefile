@@ -23,8 +23,8 @@ develop: node_modules
 purge: clean
 	$(RM) -r node_modules
 
-.PHONY: prettier
-prettier: node_modules
+.PHONY: format
+format: node_modules
 	prettier --write $$(find src -name "*.js")
 	prettier --write --single-quote false $$(find src -name "*.scss")
 

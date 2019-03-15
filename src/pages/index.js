@@ -96,13 +96,12 @@ const IndexPage = ({ location, data }) => {
       <Header logo={file.childImageSharp.fixed} />
       <div className="container">
         <div className="card-deck">
-          {allPloneDocument.edges.map(
-            edge =>
-              edge.node.subjects.indexOf('rivi') !== -1 ? (
-                <Row node={edge.node} />
-              ) : (
-                <Card node={edge.node} />
-              )
+          {allPloneDocument.edges.map(edge =>
+            edge.node.subjects.indexOf('rivi') !== -1 ? (
+              <Row node={edge.node} />
+            ) : (
+              <Card node={edge.node} />
+            )
           )}
         </div>
       </div>
