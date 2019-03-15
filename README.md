@@ -18,5 +18,3 @@ Starting development server:
 ```bash
 make watch
 ```
-
-

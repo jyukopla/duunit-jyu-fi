@@ -41,4 +41,5 @@ public: node_modules $(SOURCES)
 
 node_modules: package.json
 	yarn install
+	./patch.sh
 	touch node_modules
