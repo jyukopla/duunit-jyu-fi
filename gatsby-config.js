@@ -17,7 +17,7 @@ module.exports = {
                 'File',
                 'Folder',
                 'Image',
-            ]
+            ],
         },
         token: process.env.TOKEN,
         logLevel: 'DEBUG',
