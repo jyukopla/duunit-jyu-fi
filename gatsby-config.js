@@ -11,6 +11,14 @@ module.exports = {
       resolve: 'gatsby-source-plone',
       options: {
         baseUrl: 'https://duunit.jyu.fi/fi/2019',
+        searchParams: {
+            portal_type: [
+                'Document',
+                'File',
+                'Folder',
+                'Image',
+            ]
+        },
         token: process.env.TOKEN,
         logLevel: 'DEBUG',
       },

@@ -51,7 +51,7 @@
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.28",
     "gatsby-source-filesystem": "^2.0.25",
-    "gatsby-source-plone": "git+https://github.com/collective/gatsby-source-plone.git#ba48b17c29db37d7508ab55d5640b50523b5a738",
+    "gatsby-source-plone": "git+https://github.com/collective/gatsby-source-plone.git#1ce2b52e2345a2d2a0e054c3afec00a9c2fed776",
     "gatsby-transformer-sharp": "^2.1.17",
     "node-sass": "^4.11.0",
     "object-fit-images": "^3.2.4",
